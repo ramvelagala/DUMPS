@@ -1,11 +1,8 @@
-SET @rowindex := -1;
- 
-SELECT
-   AVG(g.grade)
-FROM
-   (SELECT @rowindex:=@rowindex + 1 AS rowindex,
-           grades.grade AS grade
-    FROM grades
-    ORDER BY grades.grade) AS g
-WHERE
-g.rowindex IN (FLOOR(@rowindex / 2) , CEIL(@rowindex / 2));
+SELECT DISTINCT AGILEGROUP, COUNT(AGILEGROUP) as frequ
+FROM DBKDMDB.ADMIN.AGILELABBERS p1
+WHERE ((SELECT  count(*) FROM DBKDMDB.ADMIN.AGILELABBERS p2
+WHERE p2.AGILEGROUP >= p1.AGILEGROUP ) <=
+(SELECT  0.25 * count(*) FROM DBKDMDB.ADMIN.AGILELABBERS) )
+GROUP BY p1.AGILEGROUP
+DESC
+;
