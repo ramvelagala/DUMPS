@@ -6,3 +6,11 @@ WHERE p2.AGILEGROUP >= p1.AGILEGROUP ) <=
 GROUP BY p1.AGILEGROUP
 DESC
 ;
+
+
+
+
+
+SELECT  count($column) as minus_count, count(*) as count1, minus_count|count1 as percent
+ FROM $table
+Where  $column = -1
