@@ -1,1 +1,2 @@
-https://stackoverflow.com/questions/4741239/select-top-x-or-bottom-percent-for-numeric-values-in-mysql
+SELECT * FROM product_table WHERE price >= (SELECT price FROM product_table 
+ORDER BY price DESC LIMIT 1 OFFSET (SELECT 0.1 * COUNT(*) FROM product_table));
