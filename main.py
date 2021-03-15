@@ -1,2 +1,7 @@
-SELECT * FROM product_table WHERE price >= (SELECT price FROM product_table 
-ORDER BY price DESC LIMIT 1 OFFSET (SELECT 0.1 * COUNT(*) FROM product_table));
+{"table_name": "M_BFT_FC_TRN_FIX_TERM_MNTY", "column_name": "TRN_FIX_TRM_MTY_SEQ_SK", "data_type": "BIGINT", "is_nullable": true}
+
+
+ "no_of_rows": 0, "cardinality": 0, "uniqueness": 0, "num_nulls": 0, "num_non_nulls": 0}
+            
+
+             "tot_rows": 0, "coverage": 0, "value": -1
