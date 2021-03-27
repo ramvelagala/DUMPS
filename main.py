@@ -1,23 +1,26 @@
-import logging
+"""Logging File for debug."""
 
-# Create a custom logger
-logger = logging.getLogger(__name__)
+import logging.config
+import os
+import pathlib
 
-# Create handlers
-c_handler = logging.StreamHandler()
-f_handler = logging.FileHandler('file.log')
-c_handler.setLevel(logging.WARNING)
-f_handler.setLevel(logging.ERROR)
 
-# Create formatters and add it to handlers
-c_format = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
-f_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-c_handler.setFormatter(c_format)
-f_handler.setFormatter(f_format)
+def setup(
+        logging_ini: str = "logging.ini", loglevel: str = "INFO", debug: str = "false"
+):
+    """Set up logging system, using sane defaults.
 
-# Add handlers to the logger
-logger.addHandler(c_handler)
-logger.addHandler(f_handler)
+    Set DEBUG to "true" to enable debug logging.
+    Otherwise, set LOGLEVEL to the desired loglevel.
+    """
+    logging_ini = pathlib.Path(logging_ini)
+    if not (logging_ini.exists() and logging_ini.is_file()):
+        logging_ini = pathlib.Path(__file__).parent / logging_ini
+    logging.config.fileConfig(logging_ini)
+    loglevel = os.environ.get("LOGLEVEL", loglevel).upper()
+    if os.environ.get("DEBUG", debug).casefold() == "true":
+        loglevel = logging.DEBUG
+    logging.getLogger().setLevel(loglevel)
 
-logger.warning('This is a warning')
-logger.error('This is an error')
+
+setup()
