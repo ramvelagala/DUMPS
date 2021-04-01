@@ -1,12 +1,18 @@
 import click
+from datetime import date
 
 
 @click.group(invoke_without_command=True)
 @click.option('--age', '-a', type=int)
+@click.option('--speed', prompt="Give speed  in mil/hr")
+@click.option('--date-start','-dt', type=click.DateTime(formats=["%Y-%m-%d"]),default=str(date.today()))
 @click.pass_context
-def cli(ctx, age):
+def cli(ctx, age,speed, date_start):
     ctx.ensure_object(dict)
     ctx.obj['age'] = age
+    ctx.obj['speed'] = speed
+    ctx.obj['startdate'] = date_start
+    click.echo(f"start date: {date_start}")
     if ctx.invoked_subcommand is None:
         click.echo('I was invoked without subcommand')
         click.echo(f"age: {age}")
@@ -22,6 +28,7 @@ def shruthi(ctx,profession):
     click.echo(f"profession: {profession}")
     click.echo(ctx)
     click.echo(f'age:{ctx.obj["age"]}')
+    click.echo(f'speed:{ctx.obj["speed"]}')
 
 @click.command()  # @cli, not @click!
 @click.option('--firstname', '-fn')
