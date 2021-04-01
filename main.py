@@ -1,26 +1,9 @@
-"""Logging File for debug."""
-
-import logging.config
-import os
-import pathlib
-
-
-def setup(
-        logging_ini: str = "logging.ini", loglevel: str = "INFO", debug: str = "false"
-):
-    """Set up logging system, using sane defaults.
-
-    Set DEBUG to "true" to enable debug logging.
-    Otherwise, set LOGLEVEL to the desired loglevel.
-    """
-    logging_ini = pathlib.Path(logging_ini)
-    if not (logging_ini.exists() and logging_ini.is_file()):
-        logging_ini = pathlib.Path(__file__).parent / logging_ini
-    logging.config.fileConfig(logging_ini)
-    loglevel = os.environ.get("LOGLEVEL", loglevel).upper()
-    if os.environ.get("DEBUG", debug).casefold() == "true":
-        loglevel = logging.DEBUG
-    logging.getLogger().setLevel(loglevel)
-
-
-setup()
+@click.command()
+@click.option("--name",'-n')
+@click.option("--focus_values", '-f',multiple=True)
+@click.option("--limit_top",prompt="No of Values to be displayed for highest frequent values",type=int)
+def final(name,focus_values, limit_top):
+    print(name)
+    print(f"This is limit_top: {limit_top}")
+    #print(f"This is limit_bot: {limit_bot}")
+    print(f"This is focus_values:{focus_values}")
