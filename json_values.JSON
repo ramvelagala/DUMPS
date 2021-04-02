@@ -1,1 +1,100 @@
-{"result_str": [{"rows": 200.0, "cardinality": 8.0, "uniqueness": 4.0, "nulls": 0.0, "non_nulls": 200.0}, {"median": 23.0, "mean": 25.06, "maximum": 38.0, "minimum": 8.0, "standard_deviation": 15.109}, {"value_metric": [{"top_value": "02.AssociateFamily Officer Sponsor", "top_val_count": 55, "top_coverage": 27.5}, {"top_value": "03.AssociateFamily Non-Officer Sponsor", "top_val_count": 37, "top_coverage": 18.5}, {"top_value": "08.Other", "top_val_count": 29, "top_coverage": 14.5}, {"top_value": "06.NCO Active Duty", "top_val_count": 20, "top_coverage": 10.0}, {"top_value": "07.NCO Non-Active Duty", "top_val_count": 20, "top_coverage": 10.0}]}, {"value_metric_2": [{"bot_value": "05.Enlisted Non-Active Duty", "bot_val_count": 7, "bot_coverage": 3.5}, {"bot_value": "04.Enlisted Active Duty", "bot_val_count": 15, "bot_coverage": 7.5}, {"bot_value": "01.Officer", "bot_val_count": 17, "bot_coverage": 8.5}, {"bot_value": "07.NCO Non-Active Duty", "bot_val_count": 20, "bot_coverage": 10.0}, {"bot_value": "06.NCO Active Duty", "bot_val_count": 20, "bot_coverage": 10.0}]}, {"focus_metric": [{"count": 29, "coverage": 14.5, "focus_value": "08.Other"}, {"count": 55, "coverage": 27.5, "focus_value": "02.AssociateFamily Officer Sponsor"}, {"count": 20, "coverage": 10.0, "focus_value": "07.NCO Non-Active Duty"}]}]}
+{
+  "result": [
+    {
+      "rows": 15505.0,
+      "cardinality": 501.0,
+      "uniqueness": 3.2312,
+      "nulls": 0.0,
+      "non_nulls": 15505.0
+    },
+    {
+      "median": 248.0,
+      "mean": 249.808771,
+      "maximum": 500.0,
+      "minimum": -1.0,
+      "standard_deviation": 5.76
+    },
+    {
+      "value_metric": [
+        {
+          "top_value": 223,
+          "top_val_count": 49,
+          "top_coverage": 0.316
+        },
+        {
+          "top_value": 13,
+          "top_val_count": 48,
+          "top_coverage": 0.3096
+        },
+        {
+          "top_value": 108,
+          "top_val_count": 47,
+          "top_coverage": 0.3031
+        },
+        {
+          "top_value": 478,
+          "top_val_count": 46,
+          "top_coverage": 0.2967
+        },
+        {
+          "top_value": 52,
+          "top_val_count": 46,
+          "top_coverage": 0.2967
+        }
+      ]
+    },
+    {
+      "value_metric_2": [
+        {
+          "bot_value": 270,
+          "bot_val_count": 16,
+          "bot_coverage": 0.1032
+        },
+        {
+          "bot_value": 24,
+          "bot_val_count": 17,
+          "bot_coverage": 0.1096
+        },
+        {
+          "bot_value": 329,
+          "bot_val_count": 18,
+          "bot_coverage": 0.1161
+        },
+        {
+          "bot_value": 107,
+          "bot_val_count": 18,
+          "bot_coverage": 0.1161
+        },
+        {
+          "bot_value": 454,
+          "bot_val_count": 19,
+          "bot_coverage": 0.1225
+        }
+      ]
+    },
+    {
+      "focus_metric": [
+        {
+          "count": 37,
+          "coverage": 0.2386,
+          "focus_value": 22
+        },
+        {
+          "count": 36,
+          "coverage": 0.2322,
+          "focus_value": 30
+        },
+        {
+          "count": 30,
+          "coverage": 0.1935,
+          "focus_value": 28
+        },
+        {
+          "count": 30,
+          "coverage": 0.1935,
+          "focus_value": -1
+        }
+      ]
+    }
+  ]
+}
