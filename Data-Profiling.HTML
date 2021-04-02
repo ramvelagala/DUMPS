@@ -4,67 +4,49 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
-    <script>
+
+    <script type="text/javascript" src="my_script2.js" ></script>
 
 
-$(function(){
-    var table_data = [];
-    $.getJSON('venkat.json', function(data) {
-        $.each(data.result, function(i, f) { //for each loop
-            console.log(f.table_name)
-            var tblRow = "<tr></tr>"
-            if(f.table_name != undefined)
-            { tblRow+="<tr>" + "<td> Table - " + f.table_name + "</td>" + "</tr>"}
-
-            if(f.column_name != undefined)
-            { tblRow+="<tr>" + "<td> Coluumn Name - " + f.column_name + "</td>" + "</tr>"}
-
-
-
-
-            if(f.subject != '')
-            {
-                console.log(f.subject)
-                console.log(typeof(f.subject))
-
-                if(f.no_of_rows != null)
-                {
-                    console.log(f.no_of_rows)
-                    tblRow +=  "<tr>" + "<td> <b>Domain Metrix</b> </td>" + "</tr>"
-                    tblRow+="<tr>" + "<td> No of Rows - " + f.no_of_rows + "</td>" + "</tr>+"
-                   }
-                  if(f.cardinality != null)
-                  {
-                   console.log(f.cardinality)
-                    tblRow+="<tr>" + "<td> Cardinality - " + f.cardinality + "</td>" + "</tr>+"
-                    }
-               
-            }
-
-
-
-            // appending json data to table body tag
-             $(tblRow).appendTo("#userdata tbody");
-
-        }); //for loop end
-
-
-
-    }); //getjson close
-});
-</script>
 </head>
 
 <body>
 
 <div class="container">
+    <h2><b><center>Data Element Profiler</center></b></h2>
+    <br>
     <div class="row" style="border: 2px solid;width:99%;margin-left:5px" id="heading">
-        <h4> Host : </h4>
-        <h4> Table : </h4>
-        <h4> DB Name: </h4>
+        <h4> Host : Venkat</h4>
+        <h4> Table : Profiler_sk </h4>
+        <h4> DB Name: Netezza </h4>
     </div>
-<!--    <br/>-->
     <br/>
+    <h4><center><b>Element Metrics</b></center></h4>
+    <table border="2" class="table">
+        <tr>
+            <th>Column Name</th>
+            <th>Data Type</th>
+            <th>Is Nullable</th>
+        </tr>
+        <tr>
+            <td>Value_SK</td>
+            <td>INT</td>
+            <td>False</td>
+        </tr>
+        <!--<tr>-->
+            <!--<th>Precision</th>-->
+            <!--<th>Scaling</th>-->
+            <!--<th>Length</th>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td>0</td>-->
+            <!--<td>0</td>-->
+            <!--<td>0</td>-->
+        <!--</tr>-->
+
+    </table>
+    <!--<br/>-->
+    <h4><center><b>Domain Metrics</b></center></h4>
     <table id= "userdata" border="2" class="table">
 <!--        <thead>Table Data</thead>-->
         <tbody>
@@ -74,6 +56,10 @@ $(function(){
 
 
     </table>
+    <div id="range_metrics"></div>
+    <h4><center><b> Quadrant Metrics </b></center></h4>
+    <div id="metrics_data" style="border:2px solid;">
+    </div>
 
 </div>
 
