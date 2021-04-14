@@ -1,129 +1,1680 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-<title>{{title}}</title>
+    <title></title>
 
-<link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
 
-<script type="text/javascript" src="jquery.min.js" ></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="album.css">
 
-<!--<script type="text/javascript" src="my_script2.js" ></script>-->
+    <!--<script type="text/javascript" src="jquery.min.js"></script>-->
+
+
 
 
 </head>
 
 <body>
 
-<div class="container">
+        <main role="main">
 
-<h2><b><center>{{h1}}</center></b></h2>
+		  <section class="text-center pt-7 pb-5 landing-bg text-white overflow-hidden">
+			<div class="container">
+			  <h1 class="jumbotron-heading">Data Element Profiler</h1>
+			</div>
+		  </section>
+		<!-- Element result data start -->
+      <div>
+		  
+			
 
-<br>
-
-<div class="row" style="border: 2px solid;width:99%;margin-left:5px" id="heading">
-
-<h4> Host : Venkat</h4>
-
-<h4> Table : Profiler_sk </h4>
-
-<h4> DB Name: Netezza </h4>
-
-</div>
-
-<br/>
-
-<h4><center><b>Element Metrics</b></center></h4>
-
-<table border="2" class="table">
-
-<tr>
-
-<th>Column Name</th>
-
-<th>Data Type</th>
-
-<th>Is Nullable</th>
-
-</tr>
-
-<tr>
-
-<td>Value_SK</td>
-
-<td>INT</td>
-
-<td>False</td>
-
-</tr>
-
-
-
-</table>
-
-<!--<br/>-->
-
-<h4><center><b>Domain Metrics</b></center></h4>
-
-<table id= "userdata" border="2" class="table">
-
-
-<tbody>
-
-<tr><th>Total Rows</th><th>Nulls</th></tr>
-
-<tr>  
-
-<td> {{dom_data}} </td>
-
-<td> 0 </td>
-
-</tr>
-
-<tr><th>Cardinality</th><th>Uniqueness %</th></tr>
-
-<tr>  
-
-<td> {{cardinality}} </td>
-
-<td> {{uniqueness}} </td>
-
-</tr>
-
-</tbody>
+		  
+				<!--<div>PROFILER_TESTING</div>-->
+				<!-- table, db heading part-->
 
 
 
 
-</table>
+      <div class="album py-5 bg-light">
+        <div class="container" >
+          <div class="row" >
+			           <div class="col-3" style="background:rgb(18, 100, 163)" >
+							<div class="card">
+								<div class="card-body py-4">
+									<div class="media">
+										<div class="media-body">
+											<h3 class="mb-2">HOST</h3>
+											<p class="mb-2">Venkat</p>
+											<div class="mb-0">
 
-<div id="range_metrics"></div>
+											</div>
+										</div>
+										<div class="d-inline-block ml-3">
+											<div class="stat">
+												<img src="host.png" width="34" height="34" viewBox="0 0 24 24" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+			  &nbsp;
+						<div class="col-3" style="background:rgb(18, 100, 163)">
+							<div class="card">
+								<div class="card-body py-4">
+									<div class="media">
+										<div class="media-body">
+											<h3 class="mb-2">TABLE</h3>
+											<p class="mb-2">PROFILER_TESTING</p>
+										</div>
+										<div class="d-inline-block ml-3">
+											<div class="stat">
+												<img src="table.png" width="34" height="34" viewBox="0 0 24 24" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+			  &nbsp;
+						<div class="col-3" style="background:rgb(18, 100, 163)">
+							<div class="card">
+								<div class="card-body py-4">
+									<div class="media">
+										<div class="media-body">
+											<h3 class="mb-2">DATABASE</h3>
+											<p class="mb-2">Netezza</p>
+										</div>
+										<div class="d-inline-block ml-3">
+											<div class="stat">
+												<img src="database.png" width="34" height="34" viewBox="0 0 24 24" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-<h4><center><b> Quadrant Metrics </b></center></h4>
 
-<div id="metrics_data" style="border:2px solid;">
+          </div>
+        </div>
+      </div>
+		  <!-- table, db heading part-->
+		  <div class="container" style="margin-top:50px">
+		  <div class="row">
+			<div class="col-12">
 
-</div>
+		  
+		  
+
+				<div class="card-header" style="background:rgb(131, 172, 204)">
+						<h5 class="card-title mb-0">Column Name : COL_INT</h5>
+					</div>
+		   
+				<!-- Individual columns data -->
+		  		<!--{'meta_data': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}}-->
+
+		  
+
+				<div class="card">
 
 
-<ul>
+					
 
-{% for name in names %}
+					<div class="card-header">
+						<h5 class="card-title mb-0">Meta Data</h5>
+					</div>
 
-<li>{{name}}</li>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Column Name</th>
+								<th>Data Type</th>
+								<th>Is Nullable</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>COL_INT</td>
+								<td>INTEGER</td>
+								<td>False</td>
+							</tr>
 
-{% endfor %}
+						</tbody>
+					</table>
+						
 
-</ul>
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
 
 
-</div>
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
 
 
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'domain_metric': {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}, 'rows': 322.0, 'cardinality': 236.0, 'uniqueness': 73.29, 'nulls': 0.0}}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Domain Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Rows </th>
+								<th>Cardinality</th>
+								<th>Uniqueness</th>
+								<th>Nulls</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>322.0</td>
+								<td>236.0</td>
+								<td>73.29</td>
+								<td>0.0</td>
+							</tr>
+
+						</tbody>
+					</table>
+						
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'range_metric': {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}, 'median': 253.5, 'mean': 261.093168, 'maximum': 500.0, 'minimum': -1.0, 'standard_deviation': 0.61}}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Range Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Median </th>
+								<th>Mean</th>
+								<th>Maximum</th>
+								<th>Minimum</th>
+								<th>Standard Deviation</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>253.5</td>
+								<td>261.093168</td>
+								<td>500.0</td>
+								<td>-1.0</td>
+								<td>0.61</td>
+							</tr>
+
+						</tbody>
+					</table>
+						
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'val_metric_1': [{'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}, 'top_value': 363, 'top_val_count': 4, 'top_coverage': 1.2422}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}, 'top_value': 209, 'top_val_count': 3, 'top_coverage': 0.9317}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}, 'top_value': 476, 'top_val_count': 3, 'top_coverage': 0.9317}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}, 'top_value': 430, 'top_val_count': 3, 'top_coverage': 0.9317}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}, 'top_value': 50, 'top_val_count': 3, 'top_coverage': 0.9317}]}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+					<div class="card-header">
+						<h5 class="card-title mb-0">Value Metrics</h5>
+					</div>
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Top Value Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Top Value </th>
+								<th>Top Val Count</th>
+								<th>Top Coverage</th>
+							</tr>
+						</thead>
+						<tbody>
+						
+
+							<tr>
+								<td>363</td>
+								<td>4</td>
+								<td>1.2422</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>209</td>
+								<td>3</td>
+								<td>0.9317</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>476</td>
+								<td>3</td>
+								<td>0.9317</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>430</td>
+								<td>3</td>
+								<td>0.9317</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>50</td>
+								<td>3</td>
+								<td>0.9317</td>
+
+							</tr>
+							
+						</tbody>
+					</table>
+
+						
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'val_metric_2': [{'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}, 'bot_value': 181, 'bot_val_count': 1, 'bot_coverage': 0.3106}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}, 'bot_value': 166, 'bot_val_count': 1, 'bot_coverage': 0.3106}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}, 'bot_value': 10, 'bot_val_count': 1, 'bot_coverage': 0.3106}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}, 'bot_value': 171, 'bot_val_count': 1, 'bot_coverage': 0.3106}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}, 'bot_value': 101, 'bot_val_count': 1, 'bot_coverage': 0.3106}]}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Bot Value Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Bot Value </th>
+								<th>Bot Val Count</th>
+								<th>Bot Coverage</th>
+							</tr>
+						</thead>
+						<tbody>
+						
+
+							<tr>
+								<td>181</td>
+								<td>1</td>
+								<td>0.3106</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>166</td>
+								<td>1</td>
+								<td>0.3106</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>10</td>
+								<td>1</td>
+								<td>0.3106</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>171</td>
+								<td>1</td>
+								<td>0.3106</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>101</td>
+								<td>1</td>
+								<td>0.3106</td>
+
+							</tr>
+							
+						</tbody>
+					</table>
+
+						
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'focus_metric': [{'coverage': 0.3106, 'focus_value': 30, 'count': 1, 'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}}, {'coverage': 0.3106, 'focus_value': 20, 'count': 1, 'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_INT', 'data_type': 'INTEGER', 'is_nullable': False}}]}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Focus Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>focus Value </th>
+								<th>focus Val Count</th>
+								<th>focus Coverage</th>
+							</tr>
+						</thead>
+						<tbody>
+						
+
+							<tr>
+								<td>30</td>
+								<td>1</td>
+								<td>0.3106</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>20</td>
+								<td>1</td>
+								<td>0.3106</td>
+
+							</tr>
+							
+						</tbody>
+					</table>
+
+						
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+		  
+		  
+		  
+
+				<div class="card-header" style="background:rgb(131, 172, 204)">
+						<h5 class="card-title mb-0">Column Name : COL_STR</h5>
+					</div>
+		   
+				<!-- Individual columns data -->
+		  		<!--{'meta_data': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Meta Data</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Column Name</th>
+								<th>Data Type</th>
+								<th>Is Nullable</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>COL_STR</td>
+								<td>CHARACTER VARYING(255)</td>
+								<td>True</td>
+							</tr>
+
+						</tbody>
+					</table>
+						
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'domain_metric': {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'rows': 322.0, 'cardinality': 119.0, 'uniqueness': 36.96, 'nulls': 0.0}}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Domain Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Rows </th>
+								<th>Cardinality</th>
+								<th>Uniqueness</th>
+								<th>Nulls</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>322.0</td>
+								<td>119.0</td>
+								<td>36.96</td>
+								<td>0.0</td>
+							</tr>
+
+						</tbody>
+					</table>
+						
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'range_metric': {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'median': 6.0, 'mean': 5.919255, 'maximum': 10.0, 'minimum': 3.0, 'standard_deviation': 1.88}}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Range Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Median </th>
+								<th>Mean</th>
+								<th>Maximum</th>
+								<th>Minimum</th>
+								<th>Standard Deviation</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>6.0</td>
+								<td>5.919255</td>
+								<td>10.0</td>
+								<td>3.0</td>
+								<td>1.88</td>
+							</tr>
+
+						</tbody>
+					</table>
+						
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'val_metric_1': [{'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'top_value': 'Vanessa', 'top_val_count': 10, 'top_coverage': 3.1056}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'top_value': 'Isabella', 'top_val_count': 9, 'top_coverage': 2.795}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'top_value': 'Thomas', 'top_val_count': 8, 'top_coverage': 2.4845}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'top_value': 'Melissa', 'top_val_count': 7, 'top_coverage': 2.1739}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'top_value': 'Hailey', 'top_val_count': 7, 'top_coverage': 2.1739}]}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+					<div class="card-header">
+						<h5 class="card-title mb-0">Value Metrics</h5>
+					</div>
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Top Value Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Top Value </th>
+								<th>Top Val Count</th>
+								<th>Top Coverage</th>
+							</tr>
+						</thead>
+						<tbody>
+						
+
+							<tr>
+								<td>Vanessa</td>
+								<td>10</td>
+								<td>3.1056</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>Isabella</td>
+								<td>9</td>
+								<td>2.795</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>Thomas</td>
+								<td>8</td>
+								<td>2.4845</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>Melissa</td>
+								<td>7</td>
+								<td>2.1739</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>Hailey</td>
+								<td>7</td>
+								<td>2.1739</td>
+
+							</tr>
+							
+						</tbody>
+					</table>
+
+						
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'val_metric_2': [{'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'bot_value': 'Bruce', 'bot_val_count': 1, 'bot_coverage': 0.3106}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'bot_value': 'Daisy', 'bot_val_count': 1, 'bot_coverage': 0.3106}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'bot_value': 'Jasmine', 'bot_val_count': 1, 'bot_coverage': 0.3106}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'bot_value': 'Paige', 'bot_val_count': 1, 'bot_coverage': 0.3106}, {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'bot_value': 'Ted', 'bot_val_count': 1, 'bot_coverage': 0.3106}]}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Bot Value Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Bot Value </th>
+								<th>Bot Val Count</th>
+								<th>Bot Coverage</th>
+							</tr>
+						</thead>
+						<tbody>
+						
+
+							<tr>
+								<td>Bruce</td>
+								<td>1</td>
+								<td>0.3106</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>Daisy</td>
+								<td>1</td>
+								<td>0.3106</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>Jasmine</td>
+								<td>1</td>
+								<td>0.3106</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>Paige</td>
+								<td>1</td>
+								<td>0.3106</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>Ted</td>
+								<td>1</td>
+								<td>0.3106</td>
+
+							</tr>
+							
+						</tbody>
+					</table>
+
+						
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'focus_metric': [{'coverage': 0.0, 'focus_value': '20', 'count': 0, 'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}}, {'coverage': 0.0, 'focus_value': '30', 'count': 0, 'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_STR', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}}]}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Focus Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>focus Value </th>
+								<th>focus Val Count</th>
+								<th>focus Coverage</th>
+							</tr>
+						</thead>
+						<tbody>
+						
+
+							<tr>
+								<td>20</td>
+								<td>0</td>
+								<td>0.0</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>30</td>
+								<td>0</td>
+								<td>0.0</td>
+
+							</tr>
+							
+						</tbody>
+					</table>
+
+						
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+		  
+		  
+		  
+
+				<div class="card-header" style="background:rgb(131, 172, 204)">
+						<h5 class="card-title mb-0">Column Name : COL_DATE</h5>
+					</div>
+		   
+				<!-- Individual columns data -->
+		  		<!--{'meta_data': {'table': 'PROFILER_TESTING', 'column': 'COL_DATE', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Meta Data</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Column Name</th>
+								<th>Data Type</th>
+								<th>Is Nullable</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>COL_DATE</td>
+								<td>CHARACTER VARYING(255)</td>
+								<td>True</td>
+							</tr>
+
+						</tbody>
+					</table>
+						
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'domain_metric': {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_DATE', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'rows': 322.0, 'cardinality': 1.0, 'uniqueness': 0.31, 'nulls': 0.0}}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Domain Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Rows </th>
+								<th>Cardinality</th>
+								<th>Uniqueness</th>
+								<th>Nulls</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>322.0</td>
+								<td>1.0</td>
+								<td>0.31</td>
+								<td>0.0</td>
+							</tr>
+
+						</tbody>
+					</table>
+						
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'range_metric': {'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_DATE', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'median': 10.0, 'mean': 10.0, 'maximum': 10.0, 'minimum': 10.0, 'standard_deviation': 0}}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Range Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Median </th>
+								<th>Mean</th>
+								<th>Maximum</th>
+								<th>Minimum</th>
+								<th>Standard Deviation</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>10.0</td>
+								<td>10.0</td>
+								<td>10.0</td>
+								<td>10.0</td>
+								<td>0</td>
+							</tr>
+
+						</tbody>
+					</table>
+						
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'val_metric_1': [{'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_DATE', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'top_value': '2021-03-01', 'top_val_count': 322, 'top_coverage': 100.0}]}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+					<div class="card-header">
+						<h5 class="card-title mb-0">Value Metrics</h5>
+					</div>
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Top Value Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Top Value </th>
+								<th>Top Val Count</th>
+								<th>Top Coverage</th>
+							</tr>
+						</thead>
+						<tbody>
+						
+
+							<tr>
+								<td>2021-03-01</td>
+								<td>322</td>
+								<td>100.0</td>
+
+							</tr>
+							
+						</tbody>
+					</table>
+
+						
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'val_metric_2': [{'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_DATE', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}, 'bot_value': '2021-03-01', 'bot_val_count': 322, 'bot_coverage': 100.0}]}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Bot Value Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Bot Value </th>
+								<th>Bot Val Count</th>
+								<th>Bot Coverage</th>
+							</tr>
+						</thead>
+						<tbody>
+						
+
+							<tr>
+								<td>2021-03-01</td>
+								<td>322</td>
+								<td>100.0</td>
+
+							</tr>
+							
+						</tbody>
+					</table>
+
+						
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+				<!-- Individual columns data -->
+		  		<!--{'focus_metric': [{'coverage': 0.0, 'focus_value': '20', 'count': 0, 'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_DATE', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}}, {'coverage': 0.0, 'focus_value': '30', 'count': 0, 'subject': {'table': 'PROFILER_TESTING', 'column': 'COL_DATE', 'data_type': 'CHARACTER VARYING(255)', 'is_nullable': True, 'character_maximum_length': 255}}]}-->
+
+		  
+
+				<div class="card">
+
+
+					
+
+					<!-- dom_metric-->
+					
+					<!-- dom metric end-->
+
+					<!-- Range metric -->
+
+					
+					<br/>
+					<!--range metric end -->
+
+
+					<!--Value metric 1-->
+
+					
+
+					<!--value metric 1 end-->
+
+					<!--Value metric 2-->
+
+					
+
+					<!--value metric 2 end-->
+
+					<!--focus metric-->
+
+					
+
+					<div class="card-header">
+						<h5 class="card-title mb-0">Focus Metrics</h5>
+					</div>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>focus Value </th>
+								<th>focus Val Count</th>
+								<th>focus Coverage</th>
+							</tr>
+						</thead>
+						<tbody>
+						
+
+							<tr>
+								<td>20</td>
+								<td>0</td>
+								<td>0.0</td>
+
+							</tr>
+							
+
+							<tr>
+								<td>30</td>
+								<td>0</td>
+								<td>0.0</td>
+
+							</tr>
+							
+						</tbody>
+					</table>
+
+						
+
+					<!--focus metric end-->
+
+
+
+					</div>
+
+
+		  
+				<br>
+
+		  	<!-- columns data end -->
+		  
+		  
+		  
+			</div>
+		  </div>
+		  </div>
+
+
+
+			
+			
+
+
+
+
+		  </div>
+			<!-- Element result data end -->
+
+
+
+    </main>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="bootstrap.min.js" ></script>
 </body>
 
 </html>
