@@ -1,98 +1,1474 @@
 {
   "result": [
     {
-      "rows": 15505.0,
-      "cardinality": 501.0,
-      "uniqueness": 3.2312,
-      "nulls": 0.0,
-      "non_nulls": 15505.0
-    },
-    {
-      "median": 248.0,
-      "mean": 249.808771,
-      "maximum": 500.0,
-      "minimum": -1.0,
-      "standard_deviation": 5.76
-    },
-    {
-      "value_metric": [
+      "PROFILER_TESTING": [
         {
-          "top_value": 223,
-          "top_val_count": 49,
-          "top_coverage": 0.316
+          "COL_INT": [
+            {
+              "meta_data": {
+                "table": "PROFILER_TESTING",
+                "column": "COL_INT",
+                "data_type": "INTEGER",
+                "is_nullable": false
+              }
+            },
+            {
+              "domain_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING",
+                  "column": "COL_INT",
+                  "data_type": "INTEGER",
+                  "is_nullable": false
+                },
+                "rows": 9415.0,
+                "cardinality": 501.0,
+                "uniqueness": 5.3213,
+                "nulls": 0.0
+              }
+            },
+            {
+              "range_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING",
+                  "column": "COL_INT",
+                  "data_type": "INTEGER",
+                  "is_nullable": false
+                },
+                "median": 250.0,
+                "mean": 251.612002,
+                "maximum": 500.0,
+                "minimum": -1.0,
+                "standard_deviation": 4.42
+              }
+            },
+            {
+              "val_metric_1": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  },
+                  "top_value": 480,
+                  "top_val_count": 33,
+                  "top_coverage": 0.3505
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  },
+                  "top_value": 240,
+                  "top_val_count": 32,
+                  "top_coverage": 0.3399
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  },
+                  "top_value": -1,
+                  "top_val_count": 30,
+                  "top_coverage": 0.3186
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  },
+                  "top_value": 234,
+                  "top_val_count": 30,
+                  "top_coverage": 0.3186
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  },
+                  "top_value": 281,
+                  "top_val_count": 30,
+                  "top_coverage": 0.3186
+                }
+              ]
+            },
+            {
+              "val_metric_2": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  },
+                  "bot_value": 251,
+                  "bot_val_count": 7,
+                  "bot_coverage": 0.0743
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  },
+                  "bot_value": 294,
+                  "bot_val_count": 8,
+                  "bot_coverage": 0.085
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  },
+                  "bot_value": 387,
+                  "bot_val_count": 9,
+                  "bot_coverage": 0.0956
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  },
+                  "bot_value": 16,
+                  "bot_val_count": 9,
+                  "bot_coverage": 0.0956
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  },
+                  "bot_value": 474,
+                  "bot_val_count": 9,
+                  "bot_coverage": 0.0956
+                }
+              ]
+            },
+            {
+              "focus_metric": [
+                {
+                  "coverage": 0.2443,
+                  "focus_value": 19,
+                  "count": 23,
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  }
+                },
+                {
+                  "coverage": 0.3186,
+                  "focus_value": -1,
+                  "count": 30,
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "!",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_INT",
+                    "data_type": "INTEGER",
+                    "is_nullable": false
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-          "top_value": 13,
-          "top_val_count": 48,
-          "top_coverage": 0.3096
+          "COL_STR": [
+            {
+              "meta_data": {
+                "table": "PROFILER_TESTING",
+                "column": "COL_STR",
+                "data_type": "CHARACTER VARYING(255)",
+                "is_nullable": true,
+                "character_maximum_length": 255
+              }
+            },
+            {
+              "domain_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING",
+                  "column": "COL_STR",
+                  "data_type": "CHARACTER VARYING(255)",
+                  "is_nullable": true,
+                  "character_maximum_length": 255
+                },
+                "rows": 9415.0,
+                "cardinality": 135.0,
+                "uniqueness": 1.4339,
+                "nulls": 0.0
+              }
+            },
+            {
+              "range_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING",
+                  "column": "COL_STR",
+                  "data_type": "CHARACTER VARYING(255)",
+                  "is_nullable": true,
+                  "character_maximum_length": 255
+                },
+                "median": 6.0,
+                "mean": 5.851726,
+                "maximum": 10.0,
+                "minimum": 1.0,
+                "standard_deviation": 34.68
+              }
+            },
+            {
+              "val_metric_1": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "Vanessa",
+                  "top_val_count": 229,
+                  "top_coverage": 2.4323
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "Kelsey",
+                  "top_val_count": 174,
+                  "top_coverage": 1.8481
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "Thomas",
+                  "top_val_count": 151,
+                  "top_coverage": 1.6038
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "Melissa",
+                  "top_val_count": 148,
+                  "top_coverage": 1.572
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "Miller",
+                  "top_val_count": 142,
+                  "top_coverage": 1.5082
+                }
+              ]
+            },
+            {
+              "val_metric_2": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "!",
+                  "bot_val_count": 6,
+                  "bot_coverage": 0.0637
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "Antony",
+                  "bot_val_count": 31,
+                  "bot_coverage": 0.3293
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "April",
+                  "bot_val_count": 34,
+                  "bot_coverage": 0.3611
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "Michelle",
+                  "bot_val_count": 35,
+                  "bot_coverage": 0.3717
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "Abraham",
+                  "bot_val_count": 36,
+                  "bot_coverage": 0.3824
+                }
+              ]
+            },
+            {
+              "focus_metric": [
+                {
+                  "coverage": 0.0637,
+                  "focus_value": "!",
+                  "count": 6,
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "19",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "-1",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_STR",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-          "top_value": 108,
-          "top_val_count": 47,
-          "top_coverage": 0.3031
+          "COL_DATE": [
+            {
+              "meta_data": {
+                "table": "PROFILER_TESTING",
+                "column": "COL_DATE",
+                "data_type": "CHARACTER VARYING(255)",
+                "is_nullable": true,
+                "character_maximum_length": 255
+              }
+            },
+            {
+              "domain_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING",
+                  "column": "COL_DATE",
+                  "data_type": "CHARACTER VARYING(255)",
+                  "is_nullable": true,
+                  "character_maximum_length": 255
+                },
+                "rows": 9415.0,
+                "cardinality": 32.0,
+                "uniqueness": 0.3399,
+                "nulls": 0.0
+              }
+            },
+            {
+              "range_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING",
+                  "column": "COL_DATE",
+                  "data_type": "CHARACTER VARYING(255)",
+                  "is_nullable": true,
+                  "character_maximum_length": 255
+                },
+                "median": 10.0,
+                "mean": 10.0,
+                "maximum": 10.0,
+                "minimum": 10.0,
+                "standard_deviation": 17.05
+              }
+            },
+            {
+              "val_metric_1": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "2021-03-21",
+                  "top_val_count": 336,
+                  "top_coverage": 3.5688
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "2021-03-01",
+                  "top_val_count": 322,
+                  "top_coverage": 3.4201
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "2021-03-13",
+                  "top_val_count": 318,
+                  "top_coverage": 3.3776
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "2021-03-28",
+                  "top_val_count": 316,
+                  "top_coverage": 3.3563
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "2021-03-15",
+                  "top_val_count": 315,
+                  "top_coverage": 3.3457
+                }
+              ]
+            },
+            {
+              "val_metric_2": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "2021-03-12",
+                  "bot_val_count": 268,
+                  "bot_coverage": 2.8465
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "2021-03-14",
+                  "bot_val_count": 269,
+                  "bot_coverage": 2.8571
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "2021-03-27",
+                  "bot_val_count": 272,
+                  "bot_coverage": 2.889
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "2021-03-17",
+                  "bot_val_count": 276,
+                  "bot_coverage": 2.9315
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "2021-04-01",
+                  "bot_val_count": 277,
+                  "bot_coverage": 2.9421
+                }
+              ]
+            },
+            {
+              "focus_metric": [
+                {
+                  "coverage": 0.0,
+                  "focus_value": "19",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "-1",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "!",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-          "top_value": 478,
-          "top_val_count": 46,
-          "top_coverage": 0.2967
+          "data_store": "DBKDMLB"
         },
         {
-          "top_value": 52,
-          "top_val_count": 46,
-          "top_coverage": 0.2967
+          "database": "Netezza"
         }
       ]
     },
     {
-      "value_metric_2": [
+      "PROFILER_TESTING_EXTRA": [
         {
-          "bot_value": 270,
-          "bot_val_count": 16,
-          "bot_coverage": 0.1032
+          "COL_ADDRESSES": [
+            {
+              "meta_data": {
+                "table": "PROFILER_TESTING_EXTRA",
+                "column": "COL_ADDRESSES",
+                "data_type": "CHARACTER VARYING(255)",
+                "is_nullable": true,
+                "character_maximum_length": 255
+              }
+            },
+            {
+              "domain_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING_EXTRA",
+                  "column": "COL_ADDRESSES",
+                  "data_type": "CHARACTER VARYING(255)",
+                  "is_nullable": true,
+                  "character_maximum_length": 255
+                },
+                "rows": 4540.0,
+                "cardinality": 102.0,
+                "uniqueness": 2.2467,
+                "nulls": 0.0
+              }
+            },
+            {
+              "range_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING_EXTRA",
+                  "column": "COL_ADDRESSES",
+                  "data_type": "CHARACTER VARYING(255)",
+                  "is_nullable": true,
+                  "character_maximum_length": 255
+                },
+                "median": 22.0,
+                "mean": 22.030837,
+                "maximum": 35.0,
+                "minimum": 1.0,
+                "standard_deviation": 9.43
+              }
+            },
+            {
+              "val_metric_1": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "P.O. Box 142, 3590 Amet Ave",
+                  "top_val_count": 66,
+                  "top_coverage": 1.4537
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "Ap #315-7520 Nisi. Road",
+                  "top_val_count": 62,
+                  "top_coverage": 1.3656
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "355-8999 Nunc St.",
+                  "top_val_count": 62,
+                  "top_coverage": 1.3656
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "P.O. Box 261, 3895 Mollis. Ave",
+                  "top_val_count": 60,
+                  "top_coverage": 1.3216
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "Ap #567-4226 Donec Rd.",
+                  "top_val_count": 59,
+                  "top_coverage": 1.2996
+                }
+              ]
+            },
+            {
+              "val_metric_2": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "nan",
+                  "bot_val_count": 3,
+                  "bot_coverage": 0.0661
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "!",
+                  "bot_val_count": 4,
+                  "bot_coverage": 0.0881
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "Ap #133-6042 Est, St.",
+                  "bot_val_count": 29,
+                  "bot_coverage": 0.6388
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "P.O. Box 793, 9990 Fringilla Street",
+                  "bot_val_count": 33,
+                  "bot_coverage": 0.7269
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "482-8051 Nascetur Avenue",
+                  "bot_val_count": 33,
+                  "bot_coverage": 0.7269
+                }
+              ]
+            },
+            {
+              "focus_metric": [
+                {
+                  "coverage": 0.0881,
+                  "focus_value": "!",
+                  "count": 4,
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "19",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "-1",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_ADDRESSES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": true,
+                    "character_maximum_length": 255
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-          "bot_value": 24,
-          "bot_val_count": 17,
-          "bot_coverage": 0.1096
+          "COL_NAMES": [
+            {
+              "meta_data": {
+                "table": "PROFILER_TESTING_EXTRA",
+                "column": "COL_NAMES",
+                "data_type": "CHARACTER VARYING(255)",
+                "is_nullable": false,
+                "character_maximum_length": 255
+              }
+            },
+            {
+              "domain_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING_EXTRA",
+                  "column": "COL_NAMES",
+                  "data_type": "CHARACTER VARYING(255)",
+                  "is_nullable": false,
+                  "character_maximum_length": 255
+                },
+                "rows": 4540.0,
+                "cardinality": 99.0,
+                "uniqueness": 2.1806,
+                "nulls": 0.0
+              }
+            },
+            {
+              "range_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING_EXTRA",
+                  "column": "COL_NAMES",
+                  "data_type": "CHARACTER VARYING(255)",
+                  "is_nullable": false,
+                  "character_maximum_length": 255
+                },
+                "median": 5.0,
+                "mean": 5.605727,
+                "maximum": 10.0,
+                "minimum": 1.0,
+                "standard_deviation": 10.07
+              }
+            },
+            {
+              "val_metric_1": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "Burke",
+                  "top_val_count": 89,
+                  "top_coverage": 1.9604
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "Evelyn",
+                  "top_val_count": 89,
+                  "top_coverage": 1.9604
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "Germane",
+                  "top_val_count": 61,
+                  "top_coverage": 1.3436
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "Asher",
+                  "top_val_count": 61,
+                  "top_coverage": 1.3436
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "Warren",
+                  "top_val_count": 59,
+                  "top_coverage": 1.2996
+                }
+              ]
+            },
+            {
+              "val_metric_2": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "!",
+                  "bot_val_count": 5,
+                  "bot_coverage": 0.1101
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "Knox",
+                  "bot_val_count": 17,
+                  "bot_coverage": 0.3744
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "Elvis",
+                  "bot_val_count": 26,
+                  "bot_coverage": 0.5727
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "Jada",
+                  "bot_val_count": 32,
+                  "bot_coverage": 0.7048
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "Gavin",
+                  "bot_val_count": 34,
+                  "bot_coverage": 0.7489
+                }
+              ]
+            },
+            {
+              "focus_metric": [
+                {
+                  "coverage": 0.1101,
+                  "focus_value": "!",
+                  "count": 5,
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "19",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "-1",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NAMES",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-          "bot_value": 329,
-          "bot_val_count": 18,
-          "bot_coverage": 0.1161
+          "COL_NUMBERS": [
+            {
+              "meta_data": {
+                "table": "PROFILER_TESTING_EXTRA",
+                "column": "COL_NUMBERS",
+                "data_type": "INTEGER",
+                "is_nullable": true
+              }
+            },
+            {
+              "domain_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING_EXTRA",
+                  "column": "COL_NUMBERS",
+                  "data_type": "INTEGER",
+                  "is_nullable": true
+                },
+                "rows": 4540.0,
+                "cardinality": 102.0,
+                "uniqueness": 2.2467,
+                "nulls": 0.0
+              }
+            },
+            {
+              "range_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING_EXTRA",
+                  "column": "COL_NUMBERS",
+                  "data_type": "INTEGER",
+                  "is_nullable": true
+                },
+                "median": 736271.0,
+                "mean": 751691.718943,
+                "maximum": 998564.0,
+                "minimum": -1.0,
+                "standard_deviation": 8.73
+              }
+            },
+            {
+              "val_metric_1": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  },
+                  "top_value": 639678,
+                  "top_val_count": 77,
+                  "top_coverage": 1.696
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  },
+                  "top_value": 675858,
+                  "top_val_count": 62,
+                  "top_coverage": 1.3656
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  },
+                  "top_value": 590976,
+                  "top_val_count": 59,
+                  "top_coverage": 1.2996
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  },
+                  "top_value": 845584,
+                  "top_val_count": 59,
+                  "top_coverage": 1.2996
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  },
+                  "top_value": 863275,
+                  "top_val_count": 58,
+                  "top_coverage": 1.2775
+                }
+              ]
+            },
+            {
+              "val_metric_2": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  },
+                  "bot_value": -1,
+                  "bot_val_count": 8,
+                  "bot_coverage": 0.1762
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  },
+                  "bot_value": 0,
+                  "bot_val_count": 8,
+                  "bot_coverage": 0.1762
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  },
+                  "bot_value": 790144,
+                  "bot_val_count": 27,
+                  "bot_coverage": 0.5947
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  },
+                  "bot_value": 903750,
+                  "bot_val_count": 31,
+                  "bot_coverage": 0.6828
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  },
+                  "bot_value": 950398,
+                  "bot_val_count": 34,
+                  "bot_coverage": 0.7489
+                }
+              ]
+            },
+            {
+              "focus_metric": [
+                {
+                  "coverage": 0.1762,
+                  "focus_value": -1,
+                  "count": 8,
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "19",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "!",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_NUMBERS",
+                    "data_type": "INTEGER",
+                    "is_nullable": true
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-          "bot_value": 107,
-          "bot_val_count": 18,
-          "bot_coverage": 0.1161
+          "COL_DATE": [
+            {
+              "meta_data": {
+                "table": "PROFILER_TESTING_EXTRA",
+                "column": "COL_DATE",
+                "data_type": "CHARACTER VARYING(255)",
+                "is_nullable": false,
+                "character_maximum_length": 255
+              }
+            },
+            {
+              "domain_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING_EXTRA",
+                  "column": "COL_DATE",
+                  "data_type": "CHARACTER VARYING(255)",
+                  "is_nullable": false,
+                  "character_maximum_length": 255
+                },
+                "rows": 4540.0,
+                "cardinality": 32.0,
+                "uniqueness": 0.7048,
+                "nulls": 0.0
+              }
+            },
+            {
+              "range_metric": {
+                "subject": {
+                  "table": "PROFILER_TESTING_EXTRA",
+                  "column": "COL_DATE",
+                  "data_type": "CHARACTER VARYING(255)",
+                  "is_nullable": false,
+                  "character_maximum_length": 255
+                },
+                "median": 10.0,
+                "mean": 10.0,
+                "maximum": 10.0,
+                "minimum": 10.0,
+                "standard_deviation": 11.47
+              }
+            },
+            {
+              "val_metric_1": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "2021-03-15",
+                  "top_val_count": 164,
+                  "top_coverage": 3.6123
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "2021-03-28",
+                  "top_val_count": 158,
+                  "top_coverage": 3.4802
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "2021-03-13",
+                  "top_val_count": 157,
+                  "top_coverage": 3.4581
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "2021-03-21",
+                  "top_val_count": 156,
+                  "top_coverage": 3.4361
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "top_value": "2021-03-20",
+                  "top_val_count": 155,
+                  "top_coverage": 3.4141
+                }
+              ]
+            },
+            {
+              "val_metric_2": [
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "2021-03-10",
+                  "bot_val_count": 120,
+                  "bot_coverage": 2.6432
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "2021-03-03",
+                  "bot_val_count": 123,
+                  "bot_coverage": 2.7093
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "2021-03-11",
+                  "bot_val_count": 124,
+                  "bot_coverage": 2.7313
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "2021-03-18",
+                  "bot_val_count": 125,
+                  "bot_coverage": 2.7533
+                },
+                {
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  },
+                  "bot_value": "2021-03-25",
+                  "bot_val_count": 129,
+                  "bot_coverage": 2.8414
+                }
+              ]
+            },
+            {
+              "focus_metric": [
+                {
+                  "coverage": 0.0,
+                  "focus_value": "19",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "-1",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  }
+                },
+                {
+                  "coverage": 0.0,
+                  "focus_value": "!",
+                  "count": 0,
+                  "subject": {
+                    "table": "PROFILER_TESTING_EXTRA",
+                    "column": "COL_DATE",
+                    "data_type": "CHARACTER VARYING(255)",
+                    "is_nullable": false,
+                    "character_maximum_length": 255
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-          "bot_value": 454,
-          "bot_val_count": 19,
-          "bot_coverage": 0.1225
-        }
-      ]
-    },
-    {
-      "focus_metric": [
-        {
-          "count": 37,
-          "coverage": 0.2386,
-          "focus_value": 22
+          "data_store": "DBKDMLB"
         },
         {
-          "count": 36,
-          "coverage": 0.2322,
-          "focus_value": 30
-        },
-        {
-          "count": 30,
-          "coverage": 0.1935,
-          "focus_value": 28
-        },
-        {
-          "count": 30,
-          "coverage": 0.1935,
-          "focus_value": -1
+          "database": "Netezza"
         }
       ]
     }
