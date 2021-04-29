@@ -1,16 +1,22 @@
-{"data": 
-	[
-	{
-	"PBKDMDB.ADMIN.M_BCH_FC_MASTER_CALL_DTL":
-						[
-						{
-						{"column":[]},
-					{"datestart": " 2011-03-02"},
-	{"dateend": ""},
-	{"limit": 5},
-	{"focus_values": [-1,ram]}
-	}
-						]
-	}
-	]
+{
+    "PBKDMDB.ADMIN.M_BCH_FC_MASTER_CALL_DTL": {
+        "column": [],
+        "datestart": " 2011-03-02",
+        "dateend": "",
+        "limit": 5,
+        "focus_values": [
+            -1,
+            "ram"
+        ]
+    },
+    "PBKDMDB.ADMIN.M_BCH_FC_MASTER_CALL_DLM": {
+        "column": [],
+        "datestart": " 2011-03-02",
+        "dateend": "",
+        "limit": 5,
+        "focus_values": [
+            -1,
+            "ram"
+        ]
+    }
 }
