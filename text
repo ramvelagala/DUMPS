@@ -1,10 +1,1 @@
-1)data types --- binary and varbinary.
-2)range lo need to account for different data types being there. (like boolean things).
-3)just patching  up for now need to make it better( time and string and fixed(int). in ranged and focus).
-4)standar deviation is so fucked up... check it ASAP. (for now writing try and except just to pass snowflake.)
-5)value metric data time not being passed.
-
-
-=======================================
-
-pandas._libs.tslibs.np_datetime.OutOfBoundsDatetime: Out of bounds nanosecond timestamp: 9999-12-31 00:00:00
+https://developer.servicenow.com/connect.do#!/event/creatorcon18/CCW0654/creatorcon_18_CCW0654_lab_3__pushing_data_from_python
